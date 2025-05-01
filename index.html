@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fellipe Teixira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="index.html">
+        <h1 class="logo">Fellipe Teixeira</h1>
+        </a>
+
+        <div class="buttons">
+    <a href="#descricao">
+    <button class="contato">
+        Descrição
+    </button></a>
+
+    </a>
+
+    <a href="#fac"><button class="contato">
+        Contato
+    </button></a>
+
+</nav>
+</div>
+    </header>
+
+    <section class="home" id="home">
+
+    <div class="conjunto">
+        
+        <div class="text">
+            <h1 class="name">Hi, I'm Fellipe Teixeira</h1>
+        
+            <div class="texto-progressivo">
+                <span id="texto"></span> <span class="cursor">|</span>
+                
+            </div>
+        </div>
+        
+        <div class="foto" >
+            <img class="img-foto" src="images\Foto_de_rosto sem fundo.png" alt="foto de perfil">
+        </div>
+    </div>
+</section>
+
+<section class="descricao" id="descricao">
+    <div class="secao">
+        <h2>Descrição</h2>
+        
+        <p>Sou um programador júnior 
+            em busca de novos projetos.
+            Trabalho com HTML, CSS, JavaScript 
+            quero me aprofundar em outras linguagens. 
+            Também tenho experiência como 
+            membro da equipe em organizações 
+            com mais de 345.000 membros 
+            e mais de 135.000 funcionários simultâneos. 
+            Meu sonho é trabalhar 
+            em uma grande empresa de programação.</p>
+    </div>
+
+
+    <div class="secao">
+    <h2>Habilidades</h2>
+        <div class="areas">
+            <img class="img-lang-java" src="images/java-script.png" alt="java script">
+            <img class="img-lang" src="images/html-5.png" alt="html-5">
+            <img class="img-lang" src="images/css-3.png" alt="css-3">
+        </div>
+    </div>
+</section>
+
+<section class="fac" id="fac">
+        <h2>Contatos</h2>
+
+        <ul>
+
+           <a href="mailto:fellipeteixeirab@gmail.com"><li>
+                <div class="grup-img">
+                    <img class="img-fac" src="images/icon-email.png" alt="icon email">
+                </div>
+
+        
+                <h2 class="fac-title">Email</h2>
+                <span class="fac-span">fellipeteixeirab@gmail.com</span>
+
+            </li></a>
+
+            <li>
+                <div class="grup-img">
+                    <img class="img-fac" src="images/icon-tel.png" alt="icon tel">
+                </div>
+        
+        
+                <h2 class="fac-title">Telefone</h2>
+                <span class="fac-span">+55 (11) 9 4373-3329</span>
+        
+            </li>
+
+            <a href="https://github.com/Lipes40" target="_blank"><li>
+                <div class="grup-img">
+                    <img class="img-fac" src="images/icon-gitHub.png" alt="icon github">
+                </div>
+            
+                    <h2 class="fac-title">gitHub</h2>
+                    <span class="fac-span">Lipes40</span>
+            </li></a>
+        </ul>    
+        
+
+</section>
+
+
+</body>
+
+
+
+
+<script>
+    const texto = "A junior back-end programmer";
+    let i = 0;
+    
+    function escrever() {
+      if (i < texto.length) {
+        document.getElementById("texto").innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(escrever, 100);
+      }
+    }
+
+    escrever();
+</script>
+</html>

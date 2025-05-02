@@ -289,11 +289,12 @@ li{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-align: center;
       }
     
       .foto {
-        margin-top: 100px;
+        margin-top: 150px;
         max-width: 320px;
       }
     

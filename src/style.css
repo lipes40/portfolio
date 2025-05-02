@@ -236,7 +236,11 @@ li{
 }
 
 @media (max-width: 500px) {
-
+    
+    body{
+        overflow-x: hidden;
+    
+    }
     text{
         font-weight: 100;
         font-size: 50%;

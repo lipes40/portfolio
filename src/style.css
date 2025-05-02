@@ -25,9 +25,9 @@ h2:hover{
 p{
     margin-top: 10px;
     color: white;
-    font-size: larger;
+    font-size: 200%;
     font-weight: 100;
-    width: 700px;
+    width: 1000px;
     text-align: center;
 }
 
@@ -36,6 +36,7 @@ p{
     padding: 20px;
     transition: 0.2s;
 }
+
 .logo:hover{
     color: #b81414;
     transform: scale(1.05);
@@ -239,6 +240,8 @@ li{
 
     body{
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
     text{
@@ -250,7 +253,7 @@ li{
     }
 
     .home{
-        max-width: 300px;
+        width: 95vw;
     }
 
     .logo{
@@ -276,8 +279,9 @@ li{
       }
 
       p{
+
         width: 350px;
-        font-size: 500;
+        font-size: larger;
       }
     
       .buttons {

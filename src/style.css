@@ -242,13 +242,14 @@ li{
     }
 
     text{
+        align-items: center;
+        justify-content: center;
+        display: flex;
         font-weight: 100;
         font-size: 50%;
     }
 
     .home{
-        display: flex;
-        justify-content: center;
         max-width: 300px;
     }
 

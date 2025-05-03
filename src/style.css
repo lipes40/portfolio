@@ -27,7 +27,7 @@ p{
     color: white;
     font-size: 200%;
     font-weight: 100;
-    width: 1000px;
+    width: 90%;
     text-align: center;
 }
 
@@ -204,24 +204,6 @@ justify-items: center;
     transform: translateX(0);
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    align-items: center;
-}
-
-li{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    margin: 0 50px;
-    width: 200px;
-}
-
 .grup-img{
     margin-top: 50px;
     display: flex;
@@ -234,6 +216,60 @@ li{
 }
 .fac-span{
     color: white;
+}
+
+.ul-fac{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+}
+
+.li-fac{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    width: 200px;
+}
+
+.projetos{
+    display: flex;
+    height: 70vh;
+}
+
+.ul-projects{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    padding: 0;
+}
+
+.li-projects{
+    padding: 2px 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    flex-direction: column;
+    display: flex;
+    border: 5px solid #b81414;
+    width: 100%;
+    height: 275px;
+    transition: 0.2s;
+    margin: 0 10px;
+}
+
+.li-projects:hover{
+    transform: scale(1.05);
+}
+
+.img-project{
+    width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -278,9 +314,21 @@ li{
         align-items: center;
       }
 
-      p{
+      .ul-projects{
+        flex-direction: column;
+      }
 
-        width: 350px;
+      .img-project{
+        width: 100%;
+      }
+
+      .li-projects{
+        padding: 0 10px;
+        width: 70%;
+      }
+
+      p{
+        width: 80%;
         font-size: larger;
       }
     

@@ -239,6 +239,14 @@ justify-items: center;
 .projetos{
     display: flex;
     height: 70vh;
+    transform: translateX(-50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.projetos.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .ul-projects{

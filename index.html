@@ -88,18 +88,30 @@
 
         <ul class="ul-projects">
 
-                <li id="calculator" onclick="reds(this)" class="li-projects">
+                <li class="li-projects">
                 <h2>RGB calculator</h2>
                 <img class="img-project" src="/images/projec-calculator.png" alt="project calculator">
+                <div id="calculator" class="buttons-project">
+                    <a href="https://rgbcalculator.vercel.app" target="_blank"><button class="contato">site</button></a>
+                    <a href="https://github.com/lipes40/Calculator" target="_blank"><button class="contato">projeto</button></a>
+                </div>
                 </li>
 
                 <li class="li-projects">
                     <h2>Está por vir</h2>
+                    <div class="buttons-project">
+                       <!-- <button class="contato">site</button>
+                        <button class="contato">projeto</button>-->
+                    </div>
 
                 </li>
 
                 <li class="li-projects">
                     <h2>Está por vir</h2>
+                    <div class="buttons-project">
+                        <!-- <button class="contato">site</button>
+                        <button class="contato">projeto</button> -->
+                    </div>
 
                 </li>
 
@@ -167,6 +179,21 @@
     }
 
     escrever();
+
+    const projetos = document.querySelectorAll(".li-projects");
+
+    projetos.forEach(projeto => {
+        const botoes = projeto.querySelector('.buttons-project')
+        
+        projeto.addEventListener("mouseenter", () => {
+            botoes.classList.add('visible');
+        });
+         
+        projeto.addEventListener("mouseleave", () => {
+            botoes.classList.remove('visible');
+        });
+    });
+
 
     const sections = document.querySelectorAll("section");
 

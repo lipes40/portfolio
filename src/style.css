@@ -37,6 +37,17 @@ p{
     transition: 0.2s;
 }
 
+section{
+    transform: translateX(-50px);
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+section.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .logo:hover{
     color: #b81414;
     transform: scale(1.05);
@@ -177,14 +188,6 @@ justify-items: center;
     width: 100%;
     align-items: center;
     justify-items: center;
-    transform: translateX(-50px);
-    transition: all 1s ease;
-    opacity: 0;
-}
-
-.descricao.visible{
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .fac{
@@ -194,14 +197,6 @@ justify-items: center;
     width: 100%;
     justify-content: center;
     align-items: center;
-    transform: translateX(-50px);
-    transition: all 1s ease;
-    opacity: 0;
-}
-
-.fac.visible{
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .grup-img{
@@ -240,14 +235,6 @@ justify-items: center;
     display: flex;
     justify-content: center;
     height: 70vh;
-    transform: translateX(-50px);
-    transition: all 1s ease;
-    opacity: 0;
-}
-
-.projetos.visible{
-    opacity: 1;
-    transform: translateX(0);
 }
 
 .ul-projects{

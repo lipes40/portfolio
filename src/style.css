@@ -263,6 +263,14 @@ justify-items: center;
     transform: scale(1.05);
 }
 
+.buttons-project{
+    display: none;
+}
+
+.buttons-project.visible{
+    display: flex;
+}
+
 .img-project{
     width: 100%;
 }

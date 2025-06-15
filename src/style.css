@@ -268,7 +268,7 @@ transition: 0.2s;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    height: 100vh;
     padding: 0;
 }
 
@@ -312,7 +312,7 @@ transition: 0.2s;
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 
     body{
         overflow-x: hidden;
@@ -421,3 +421,9 @@ transition: 0.2s;
     }
 
     }
+
+@media (max-height: 500px) {
+    .projetos{
+        height: 200vh;
+    }
+}

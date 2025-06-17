@@ -49,7 +49,7 @@ p{
 }
 
 .logo{
-    color: white;
+    color: #b81414;
     padding: 20px;
     transition: 0.2s;
 }
@@ -67,7 +67,7 @@ section.visible{
 }
 
 .logo:hover{
-    color: #b81414;
+    color: white;
     transform: scale(1.05);
 }
 
@@ -200,6 +200,11 @@ transition: 0.2s;
     display: flex;
     flex-direction: column;
     margin: 20px 50px;
+    transition: 0.2;
+}
+
+.text-areas:hover{
+    transform: scale(1.2);
 }
 
 .home{
@@ -210,7 +215,6 @@ transition: 0.2s;
 .descricao{
     flex-direction: column;
     display: flex;
-    height: 100vh;
     width: 100%;
     align-items: center;
     justify-items: center;
@@ -260,7 +264,6 @@ transition: 0.2s;
 .projetos{
     display: flex;
     justify-content: center;
-    height: 70vh;
 }
 
 .ul-projects{
@@ -270,6 +273,7 @@ transition: 0.2s;
     flex-direction: row;
     height: 100vh;
     padding: 0;
+    gap: 10px;
 }
 
 .li-projects{
@@ -421,9 +425,3 @@ transition: 0.2s;
     }
 
     }
-
-@media (max-height: 500px) {
-    .projetos{
-        height: 200vh;
-    }
-}

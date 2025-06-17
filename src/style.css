@@ -16,6 +16,10 @@ body{
     flex-direction: row;
 }
 
+header{
+    position: fixed;
+}
+
 h2{
     color: #b81414;
     transition: 0.2s;

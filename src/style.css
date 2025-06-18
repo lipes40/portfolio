@@ -16,6 +16,10 @@ body{
     flex-direction: row;
 }
 
+header{
+    z-index: 100;
+}
+
 h2{
     color: #b81414;
     transition: 0.2s;
@@ -358,6 +362,7 @@ transition: 0.2s;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: fixed;
     }
 
      nav {

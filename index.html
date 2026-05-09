@@ -81,6 +81,18 @@
             <div class="separa-areas">
                 <ul class="areas">
                     <li class="text-areas">
+                        <img class="img-lang" src="images/python.png" alt="Python">
+                        <h5>Python</h5>
+                    </li>
+                    <li class="text-areas">
+                        <img class="img-lang" src="images/php.png" alt="PHP">
+                        <h5>PHP</h5>
+                    </li>
+                    <li class="text-areas">
+                        <img class="img-lang" src="images/mysql.png" alt="MySQL">
+                        <h5>MySQL</h5>
+                    </li>
+                    <li class="text-areas">
                         <img class="img-lang" src="images/java-script.png" alt="java script">
                         <h5>JavaScript</h5>
                     </li>
@@ -91,20 +103,6 @@
                     <li class="text-areas">
                         <img class="img-lang" src="images/css-3.png" alt="css-3">
                         <h5>CSS</h5>
-                    </li>
-                </ul>
-                <ul class="areas">
-                    <li class="text-areas">
-                        <img class="img-lang" src="images/php.png" alt="PHP">
-                        <h5>PHP</h5>
-                    </li>
-                    <li class="text-areas">
-                        <img class="img-lang" src="images/mysql.png" alt="MySQL">
-                        <h5>MySQL</h5>
-                    </li>
-                    <li class="text-areas">
-                        <img class="img-lang" src="images/python.png" alt="Python">
-                        <h5>Python</h5>
                     </li>
                 </ul>
             </div>
@@ -213,16 +211,39 @@
 <script>
     const texto = "A junior back-end programmer";
     let i = 0;
+    let apagando = false
 
     function escrever() {
-        if (i < texto.length) {
+        if (!apagando) {
             document.getElementById("texto").innerHTML += texto.charAt(i);
             i++;
-            setTimeout(escrever, 100);
+            if(i >= texto.length){
+                apagando = true
+                setTimeout(escrever, 1000);
+            }
+            else{
+                setTimeout(escrever, 100);
+            }
         }
+        else{
+            // document.getElementById("texto").innerHTML = ""
+            document.getElementById("texto").innerHTML = document.getElementById("texto").innerHTML.slice(0, -1)
+            i--;
+            
+            if(i <= 0){
+                apagando = false
+                setTimeout(escrever, 1000);
+            }
+            else{
+                setTimeout(escrever, 100);
+            }
+        }        
     }
 
-    escrever();
+    escrever()
+
+    
+    
 
     const projetos = document.querySelectorAll(".li-projects");
 
